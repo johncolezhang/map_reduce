@@ -1,0 +1,304 @@
+----------------------------------------------------------------
+Wed Jan 03 19:34:07 HKT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0160-bbcc-c5a0-000006becc28 
+on database directory /Users/johncole/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@60420f58 
+Loaded from file:/Users/johncole/Desktop/spark-2.2.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_152-b16
+user.dir=/Users/johncole
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+Machine Learning on Evolution Algorithm for Recommendation Prediction  Proposal  Stu_Name : ZHANG Ke Stu_Num : 54952065 Email : kzhang42-c@my.cityu.edu.hk Supervisor : ZHANG Qingfu  Introduction & Background: With the development of E-Commerce, quantity and sort of products have increased rapidly, customers have sufficient choice to choose what they want to purchase. On the contrary, it’s harder for users to find what their favorites are. In this circumstances, it’s very important for Businessmen to find a proper way to predict product for customers in order to increase sales. By analyzing customer’s history foot scripts and purchasing record, we can find customer’s buying habit and trend so that we can recommend their favorite products. For some new customers, they may not have direct purpose to buy products, using recommendation prediction, online shop can find the most popular things recently to attract them to buy, increasing number of user. So, a robust Recommendation model can meet customer’s interest, attract more views in product page, and also increase sales.   As we know, history records of user are large amount data set, which include what pages users have viewed, what goods customers have collected or bought, and when they executed those actions. Thus, how to analysis those huge data set, and outputting an expected result is the key to solve problem. A predicting model should be proposed to fit this data set. To design this predicting model, in the first step, we should find a proper tools to solve this problem. Using existing experience, machine learning can be used to generalize history data, then extract main feature of each data. By analyzing these features we can acquire the information we want. And all these steps can be learnt by machine. By training machine, it can solve problem efficiently and correctly. Machine learning can be used in many factor aspects. Such as pattern recognition, algorithm optimization, recommendation model etc. Machine can be trained to learn customer’s habit, such as finding products that customers always view, and what goods that customers collected in cart so that they may buy recently. What’s more, using machine learning, we can find what goods are most popular recently so that customers may tend to buy. So, machine learning is the method to solve this problem. In this topic, because data in set are dispersed, we can use unsupervised learning strategy to cluster relating data, use learning model to extract useful features of dataset, acquire result eventually.  Evolution Algorithm, as a brunch of machine learning, by simulating natural selection and genetic rules, optimizes the given data set. In the next time, I will put forward a feasible machine learning model, and using evolution algorithm to optimize this model to get greater result. After using machine learning algorithm, we can get many rules of recommendation, also we can call them features, but the question is which features are useful for us to get a greater result. So, using evolution algorithm, marking each features. After evolving many generations, by encoding, training
+segmented large data set many times, fitness value can be increased. Select which features are valuable for result.   Problem Set: The purpose of this topic is using provided one-month history data set, to predict users’ purchasing action in the next day. So, I will use EA and ML to predict the goods that customers may buy in the next day. Data is an important part in machine learning, without correct and sufficient data set, we cannot get close the exact answer. In this topic, data are provided by Aliyun, Tianchi, which are the real user behaviors from Taobao. It provides the behavior of more than 20000 users and information of millions of items, which contains those set: U – “the set of users”, I – “the whole set of items”, P – “the subset of items” D – “the user behavior data set in all the set of all items”. Based on different target’s recommend, such as item-based recommendation, or user-based recommendation, we can find different features. Utilizing history record to mark each models or combined model, we can get a robust prediction model.
+Student Guidelines for CS6534 Guided Study  Important Information  CS6534 Guided Study is a one semester project-based course, which is a bit different from other taught courses.  Here are some important points:  1. CS6534 Guided Study can be used as preparation for the CS6520 Project course, but it can also be taken as a stand-alone course. 2. You need to find a supervisor, based on your own research interest. 3. Implementation is typically not required for this course (but please check with your supervisor, as in some cases simple implementation or pilot experiments might be appropriate for the chosen topic). 4. If you are unable to find a supervisor by the deadline, please let me know as soon as possible to get assistance in the process. 5. A number of previous higher quality Guided Study reports have been posted on the MSCS student intranet: https://csstud.cs.cityu.edu.hk/mscs.html for your reference so that you have some idea of what is entailed. (To log into the system, you need to provide your CityUMD domain account, i.e. <eid> / <CityUMD AD password>, if you have problem to access to the system, please contact the CS Lab for assistance.  http://cslab.cs.cityu.edu.hk/).  Schedule  The schedule of the course depends on the semester that you take Guided Study. The rough schedule for the assessment tasks are given in the below table. The finalized deadlines will be sent via email.   Semester A Semester B Summer Topic Selection Week 2, Tuesday Week 2, Tuesday Week 2, Monday Project Proposal Week 3, Tuesday Week 3, Tuesday Week 2, Friday Interim Report Week 8 Week 8 Week 6 Final Report 1st day of Revision Period 1st day of Revision Period 2nd day of Exam Period Presentation The week following Final Report Submission The week following Final Report Submission The week following Final Report Submission   *Download Academic Calendar http://www6.cityu.edu.hk/arro/ac_calendar.asp  Assessment and Requirements  The course has continuous assessment throughout the semester.  The following are the assessment tasks and requirements.  1. Guided Study Topic Selection [0% marks]
+Select a topic for your guided study, and find an appropriate supervisor. The following information must be emailed to Dr. Antoni Chan abchan@cityu.edu.hk and cc to zoechan@cityu.edu.hk:  Title of guided study, student information (name, student no. and telephone numbers), and name of supervisor.  2. Project Proposal [5% marks]  A one-page proposal consisting of clear specifications of the scope and objectives of the study. The proposal should contain an introduction to the problem, and why it is important. Submit one hard copy to the department via Miss Zoe Chan (via general office mail locker no. 50), and a soft-copy to course page on Canvas.  3. Project Management [5% marks]  Overall project management including developing and maintaining the study schedule.  4. Interim Report [10% marks]   The interim report should discuss your current progress on the study, and should consist of 10-15 pages.  Here are the requirements:  (1) Introduction – Clearly describe background of the selected topic and the objectives and why the topic is useful and potential outcome (prototype of application software, performance analysis or theoretical results etc).   (2) Related work – Illustrate the problem as associated with existing and related systems/solutions. Description of advantages and disadvantages between existing solutions. Discussion of the relationship between the existing solutions and the proposed solution. (3) Outline of the project and methodology to be taken in dealing with the selected topic. Student must clearly describe the outcome. (4) References.  Submit one hard copy to the department via Miss Zoe Chan (via general office mail locker no. 50), and a soft-copy to course page on Canvas.  5. Final Report [20% marks for the report, 50% marks for technical merit]   The final report should include all the outcomes of your guided study. It will be assessed on both the technical merit (50% marks) of the report, as well as the quality of the report (20%).  The final report should be ~30 pages (excluding programs). Here are the requirements:  (1) Introduction. (see description for Interim Report)  (2) Related work. (see description for Interim Report) (3) System modeling and structure – the proposed solution. Discussion of the justifications of the design choices, and how they address existing limitations.
+(4) The methodology and algorithms used in the design/implementation of the system. (5) Preliminary performance analysis of algorithm/system. Note that if the project does not conduct implementation, a description of the kind of algorithm/theory that has been studied is required. (6) Conclusion and Future Work – A concise summary of the study, and discussion of possible future work. (7) References  Submit two hard copies to the department via Miss Zoe Chan (via general office mail locker no. 50), and a soft-copy to course page on Canvas.  6. Presentation [10% marks]  The presentation is 15 minutes long; with additional 3-5 minutes for questions.  Late Penalty:  For an assessment task that is turned in late, a penalty of 20% of its maximum mark will be applied for each day late.   Contact Information  Dr. Antoni Chan CS6534 Guided Study Coordinator   Email: abchan@cityu.edu.hk Department of Computer Science   Tel:    3442 6509  Miss Zoe Chan General Office      Email: zoechan@cityu.edu.hk Department of Computer Science   Tel:    3442 2015
+Tagsplanations: Explaining Recommendations Using Tags
+Jesse Vig
+Grouplens Research University of Minnesota jvig@cs.umn.edu
+ABSTRACT
+While recommender systems tell users what items they might like, explanations of recommendations reveal why they might like them. Explanations provide many benefits, from im- proving user satisfaction to helping users make better deci- sions. This paper introduces tagsplanations, which are ex- planations based on community tags. Tagsplanations have two key components: tag relevance, the degree to which a tag describes an item, and tag preference, the user’s senti- ment toward a tag. We develop novel algorithms for esti- mating tag relevance and tag preference, and we conduct a user study exploring the roles of tag relevance and tag prefer- ence in promoting effective tagsplanations. We also examine which types of tags are most useful for tagsplanations.
+ACM Classification Keywords
+H.5.3 Information Interfaces and Presentation: Group and Organization Interfaces—Collaborative computing; H.5.2 In- formation Interfaces and Presentation: User Interfaces
+General Terms
+Design, Experimentation, Human Factors
+Author Keywords
+Explanations, tagging, recommender systems
+INTRODUCTION
+While much of the research in recommender systems has focused on improving the accuracy of recommendations, re- cent work suggests a broader set of goals including trust, user satisfaction, and transparency [16, 1, 13, 6]. A key to achieving this broader set of goals is to explain recommen- dations to users. While recommendations tell users what items they might like, explanations reveal why they might like them. An example is the “Why this was recommended” feature on Netflix1. Netflix explains movie recommenda- tions by showing users similar movies they have rated highly in the past.
+1 http://www.netflix.com
+Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.
+IUI’09, February 8 - 11, 2009, Sanibel Island, Florida, USA. Copyright 2009 ACM 978-1-60558-331-0/09/02...$5.00.
+Figure 1: Intermediary entities (center) relate user to recommended item.
+Research shows that explanations help users make more ac- curate decisions [1], improve user acceptance of recommen- dations [6], and increase trust in the recommender system [13]. Moreover, studies indicate that users want explana- tions of their recommendations – a survey of users of one movie recommender site showed that 86% of those surveyed wanted an explanation feature added to the site [6].
+While many different types of explanation facilities exist, they all seek to show how a recommended item relates to a user’s preferences. As Figure 1 illustrates, a common tech- nique for establishing the relationship between user and rec- ommended item is to use an intermediary entity. An inter- mediary entity is needed because the direct relationship be- tween user and item is unknown, assuming that the user has not yet tried the item. In the Netflix example above, the inter- mediary entity is the list of previously rated movies shown in the explanation. The relationship between the user and these movies is that he or she has rated them positively. The rela- tionship between these movies and the recommended movie is that other users who liked these movies also liked the rec- ommended movie.
+Explanations of recommendations fall into one of three cat- egories: item-based, user-based, and feature-based, depend- ing on the type of intermediary entity used to relate the user to the recommended item. In item-based explanations like the Netflix example, a set of items serves as the intermedi- ary entity. User-based explanations utilize other users as in- termediary entities. For example, Herlocker et al. designed a explanation that shows a user how other users with simi- lar taste rated the recommended item [6]. Feature-based ap- proaches use features or characteristics of the recommended item as intermediary entities. For example, one movie rec- ommender prototype uses movie features including genre, director, and cast to justify recommendations [14].
+Shilad Sen
+Grouplens Research University of Minnesota ssen@cs.umn.edu
+John Riedl
+Grouplens Research University of Minnesota riedl@cs.umn.edu
+
+We present a new type of explanation that uses tags as fea- tures, which we call a tagsplanation. The intermediary en- tity for tagsplanations is a tag or a set of tags. For example:
+“We recommend the movie Fargo because it is tagged with quirky and you have enjoyed other movies tagged with quirky.”
+Tags have become increasingly popular on websites such as Delicious2, Flickr3, and Amazon4, and they have many qual- ities that make them useful for explanations. As described in [5], tags may describe what an item is, what it is about, or what its characteristics are – all of which may be useful for explaining a recommendation. Another advantage is that no experts are needed to create and maintain tags, since tags are applied by the users themselves. Furthermore, tags pro- vide both factual and subjective descriptions [11]. However, tags present unique challenges, including issues of tag qual- ity [10] and tag redundancy [5].
+We study two aspects of tag-based explanations: the rela- tionship of the tag to the recommended item, which we call tag relevance, and the relationship of the user to the tag, which we call tag preference. Tag relevance represents the degree to which a tag describes a given item. For example, consider a tagsplanation for the movie Pulp Fiction that uses the tag “dark comedy”. In this example, tag relevance would measure how well “dark comedy” describes Pulp Fiction. Tag preference, on the other hand, measures the user’s sen- timent to the given tag, for example how much the user likes or dislikes dark comedies. Tag relevance and tag preference are orthogonal to one another: the former is item-specific and the latter is user-specific.
+Our design of tagsplanations is motivated by three goals: justification, effectiveness, and mood compatibility. Justi- fication is the ability of the system to help the user under- stand why an item was recommended [6]. Justification dif- fers from transparency [16] because justifications may not reveal the actual mechanisms of the recommender algorithm. Tintarev et al. define effectiveness as the ability of the expla- nation to help users make good decisions. Mood compati- bility is the ability of the explanation to convey whether or not an item matches a user’s mood. A recent study showed that users are interested in explanations with mood-related features [15].
+In this paper, we investigate the roles of tag relevance and tag preference in tagsplanations. Specifically, we consider the following research questions:
+RQ-Justification: What is the role of tag preference and tag relevance in helping users understand their recom- mendation?
+Explanations help users understand why a given item was
+2 http://del.icio.us
+3 http://www.flickr.com
+4 http://www.amazon.com
+recommended. Tagsplanations promote understanding by demonstrating how a tag relates to the item and how the user relates to the tag. We investigate the role of these two components in helping users understand the recommenda- tion overall.
+RQ-Effectiveness: What is the role of tag preference and tag relevance in helping users determine if they will like the item?
+We investigate whether users prefer information about the relationship between themselves and the tag (tag preference) or between the tag and the item (tag relevance) to make good decisions.
+RQ-Mood: What is the role of tag preference and tag rel- evance in helping users decide if an item fits their current mood?
+Recommender systems typically do not consider the user’s mood when generating recommendations. Explanations pro- vide users with additional information that can help them decide if an item fits their current mood. We investigate the relative importance of tag preference and tag relevance for revealing mood compatibility.
+RQ-Tag-Type: What types of tags are most useful in tags- planations?
+A wide variety of tags may be applied to an item, some of which may be more suitable for explanations than others. As discussed in [10], factual tags identify facts about an item such as people, places, or concepts, while subjective tags ex- press users’ opinions of an item. We investigate the relative usefulness of factual tags versus subjective tags, and analyze which specific tags perform best.
+To answer these research questions, we designed a tagspla- nation feature for the MovieLens movie recommender site5 and conducted an online user study. Participants in the study viewed 4 types of tagsplanations, each of which handles tag preference and tag relevance in a different way. Participants evaluated each tagsplanation based on how well it achieved the goals of justification, effectiveness, and mood compati- bility. We then analyze the results to determine the roles of tag relevance and tag preference in promoting these 3 goals. Subjects also evaluate specific tags, and we compare the re- sults for subjective tags versus factual tags.
+RELATED WORK
+Item-based explanations. Item-based approaches use items as intermediary entities to relate the user to the recommended item. An example is the “Why this was recommended” fea- ture on Netflix, which shows users their past ratings for a set of related movies. Similarly, Amazon shows users their past purchases that motivated a recommendation of a new item. Studies show that item-based explanations improve users’
+5 http://www.movielens.org
+
+acceptance of recommendations [6] and help users make ac- curate decisions [1]. As discussed in [15], a shortcoming of item-based explanations is that users may not understand the connection between the explaining items and the recom- mended item.
+Item-based approaches have several properties that we also use in our tag-based approach. First, item-based approaches present the relationship between the user and the set of re- lated items in a way that users can easily interpret. In the Netflix example, the relationship is defined by the rating the user has given to each movie shown in the explanation. We use a similar approach, by expressing the relationship be- tween user and tag as a 1-to-5 star inferred rating. Second, item-based explanations often use ratings correlation as a criteria for choosing the related items. We use a similar ap- proach for tagsplanations by selecting tags with preference values that strongly correlate with ratings for the item.
+User-based explanations. User-based explanations utilize other users as intermediary entities. The relationship be- tween the main user and the explaining users is typically that they share similar tastes, and the relationship between the explaining users and the recommended item is that they have rated the item positively. For example, Herlocker et al. developed an explanation facility that displays a histogram of ratings of the recommended item by other users with sim- ilar taste [6]. This approach was successful at persuading users to try an item, but less effective at helping users make accurate decisions [1]. Motivated by these results, we study how well tagsplanations help users make accurate decisions.
+Feature-based explanations. Feature-based approaches use qualities or characteristics of the recommended item as in- termediary entities. Two types of features have been used in recommendation explanations:
+• Predefined categories. Tintarev et al. developed a movie recommender prototype that explains recommendations by using categories such as genre, director, and cast [14]. While these features have tremendous potential for use in recommendation explanations, using predefined cate- gories like these also presents several challenges. Shirky describes several such issues: (1) experts or system de- signers are needed to create the categorization scheme, (2) the categorization scheme might not be sufficiently descriptive, and (3) the categories may be too static to ac- commodate changing needs [12]. A tag-based approach addresses these issues by putting control in the hands of the users and allowing free-form metadata.
+• Keywords. Many types of items, such as books, articles, or websites, contain textual content that may be mined for keywords [7, 2]. Keyword-based approaches use these words as features in the explanation. The Libra book rec- ommender, for example, extracts keywords from the book text based on their predictive power in a naive Bayesian classifier and uses them to explain the recommendation [7]. Bilgic et al. showed that these explanations helps users make more accurate decisions [1].
+Explanations using item content face several challenges,
+many of which may be addressed by using tags. One lim- itation is that items such as music or pictures may not have readily available textual content. In contrast, tags may be applied to virtually any type of item. A second issue is that keywords extracted from content represent data rather than metadata, and therefore may be too low- level. In one example described in [1], the keywords used to explain a book recommendation are Heart, Beautiful, Mother, Read, Story. While these words do suggest qual- ities of the book, meta-level tags such as fiction, mother- daughter relationship, or touching might be more suit- able.
+We considered adapting keyword-style approaches to gen- erate tagsplanations. Existing keyword-style approaches [7, 1] only require that an item have a set of words and corresponding frequencies. If tags were used rather than words, the same algorithm could be utilized. We chose to develop a new approach for several reasons. First, exist- ing keyword-style approaches require that users rate items using binary categories, such as {like, dislike}. In the MovieLens recommender system used in our study, users rate items on a 5-star scale. Second, existing approaches do not account for two issues that tagging systems face: low quality tags [10] and redundant tags [5]. Third, we wished to represent the relationships between tag and item and between user and tag in a more intuitive way than in existing keyword-style approaches. For example, the Li- bra book recommender display the strength of each key- word, which equals the count of the word multiplied by the weight assigned by a naive Bayesian classifier. While these strength values may reflect a user’s preferences to- wards the keywords, users may have difficulty interpreting the values.
+DESIGN SPACE
+The goal of explanations of recommendations is to relate the recommended item to the user’s tastes and interests. As dis- cussed in the introduction, a common approach for estab- lishing this relationship is to use an intermediary entity that relates to both user and recommended item. For tagsplana- tions, the intermediary entity is a tag. Tagsplanations must clearly identify the relationship between user and tag and between tag and recommended item.
+A recommendation explanation may be one of two types: description or justification. Descriptions reveal the actual mechanism that generates the recommendation. For exam- ple, k-nearest-neighbor item-item algorithms generate rec- ommendations based on a user’s ratings for the k items most similar to the recommended item [8]. In this case, an item- based explanation could be used to accurately depict the al- gorithm. Justifications, on the other hand, convey a concep- tual model that may differ from that of the underlying algo- rithm. For example, a book recommender might use a k- nearest-neighbor item-item algorithm to recommend books, but may justify a recommendation based on the fact that the book was written by a user’s favorite author.
+While descriptions provide more transparency than justifi- cations, there are several reasons why justifications might be
+
+ preferred. First, the algorithm may be too complex or unin- tuitive to be described in terms that a user can understand. Dimension reduction models, for example, generate recom- mendations based on a set of latent factors in the data that may not have a clear interpretation [4]. Second, the system designers may want to keep aspects of the algorithm hidden, for example to protect trade secrets. Third, using justifica- tion allows a greater freedom in designing explanations since they are not constrained by the recommender algorithm.
+Relationship between item and tag: tag relevance
+We use the term tag relevance to describe the relationship between a tag and an item. One possible measure of rele- vance is tag popularity. That is, have many users applied a given tag to an item or only a few users? A tag applied by many users is probably more relevant to the given item. Another potential measure of relevance is the correlation be- tween item preference and tag preference. That is, do users who like a given tag also tend to like the associated item? A strong correlation may suggest that the tag is highly rel- evant. While both tag popularity and preference correlation may indicate tag relevance, the two measures may not agree with one another. On MovieLens, the tag “Bruce Willis” is unpopular for the film Predator (no one has applied the tag to this movie); we suspect this is because Bruce Willis is not in Predator. However, a strong correlation may ex- ist between users’ preference for the tag “Bruce Willis” and their preference for Predator because Predator is the type of movie Bruce Willis is often in.
+Tag relevance may be represented as either a binary rela- tionship (relevant, not relevant) or as a value on a continu- ous scale. While a binary relationship might convey a sim- pler conceptual model, it lacks the precision of a continuous scale. Users may wish to know how relevant a given tag is, rather than just whether it is relevant or not.
+Relationship between user and tag: tag preference
+We define tag preference to be the user’s sentiment towards a tag. The key design choices concern how to represent this re- lationship and how to compute the value for a given user and tag. Tag preference may be modeled as a binary relation- ship (like, dislike) or as a continuous variable representing the degree to which the user likes or dislikes a tag. A binary approach provides a simpler conceptual model to users, but is less precise than a continuous approach. A user’s prefer- ence towards a tag may be computed in one of two ways. Preference may be assessed directly, by asking a user his or her opinion of a tag, or it may be inferred based on a user’s actions. For example, if a user tends to give high ratings to items that have a particular tag, the system could infer that he or she has a positive preference toward that tag. An ad- vantage of inferring tag preference over asking users directly is that no additional work is needed from the users.
+DESIGN DECISIONS
+Platform
+We used the MovieLens movie recommender website (Fig. 2) as a platform for implementing tagsplanations. Movie- Lens members rate movies on 5-star scale and receive rec-
+Figure 2: A sample screen on MovieLens
+ommendations based on a k-nearest-neighbor item-item rec- ommender algorithm. Over 164,000 members have rated at least one movie, and members have contributed over 15 million movie ratings in total. In January 2006, Movie- Lens introduced tagging [11, 10]. 3,758 users have created 14,675 distinct tags, which have been applied to 7,268 dif- ferent movies. Users rate the quality of tags by clicking on a thumbs-up or thumbs-down icon next to each tag.
+MovieLens does not take tags into account when generating movie recommendations. Therefore, tag-based explanations serve as a justification rather than a description of the under- lying recommender algorithm.
+Tag Preference
+In this section we first give an overview of our approach, followed by formal definitions. As previously discussed, tag preference may be computed in one of two ways. Tag pref- erence may be measured directly, by asking a user his or her opinion of a tag, or it may be inferred based on user behavior. We use the latter approach, in order to spare users from hav- ing to explicitly evaluate many different tags. Specifically, we infer users’ tag preferences based on their movie ratings. We use movie ratings because they are the central mecha- nism on MovieLens by which users express preferences and because they are in abundant supply (the average MovieLens user has rated 75 movies).
+To estimate a user’s preference for a tag, we compute a weighted average of the user’s ratings of movies with that tag. For example, suppose we are estimating Alice’s prefer- ence for the tag “violence” and Alice has rated the following movies tagged with “violence”: Planet of the Apes, Reser- voir Dogs, Sin City, and Spider-Man 2. Her inferred prefer- ence toward “violence” is a weighted average of those four movie ratings. We chose to use a weighted average for two reasons. First, it provides a simple and computationally ef- ficient algorithm for computing tag preference. Second, it guarantees that the computed tag preference values will lie in the same 0.5 - 5.0 range as the movie ratings, since the output value of a weighted average is bounded by the min- imum and maximum input values. This allows us to repre- sent tag preference values using the familiar 5-star paradigm used for movie ratings. Although we considered a binary representation (like, dislike), we chose the 5-star scale be- cause it provides a fine-grained level of information yet is easy to interpret since it follows the standard of the movie rating scale. Previous studies have shown that users prefer fine-grained rating scales [3].
+
+We weight the average because some movie ratings may sug- gest tag preference more strongly than others. For exam- ple, Reservoir Dogs is much more violent than Planet of the Apes, so a user’s rating for Reservoir Dogs is probably a stronger indicator of their preference toward “violence” than their rating for Planet of the Apes, even though both movies have been tagged with “violence”. We use tag frequency to measure the relative importance of a movie in determining tag preference. For example, MovieLens users have tagged Reservoir Dogs with “violence” 7 times, while Planet of the Apes has only been tagged once. Therefore we assign a higher weight to Reservoir Dogs when computing a user’s preference for “violence”.
+We now provide formal definitions for the concepts de- scribed above. First, we define tagshare6, a measure of tag frequency that is used to assign weights to movies. The tagshare of a tag t applied to an item i is the number of times t has been applied to i, divided by the number of times any tag has been applied to i. We denote this value as tag share(t, i). For example, on MovieLens the tag “Bruce Willis” has been applied to the movie Die Hard 8 times and the number of applications of all tags to Die Hard is 56. Therefore tag share(“Bruce Willis”, Die Hard) equals 8/56 = 0.14. We add a constant smoothing factor of 15 to the denominator when computing tagshare, in order to reduce the value when an item has a small number of tags7. This smoothing reflects the possibility that applications of a tag may be due to chance.
+We now formally define the measure we use to estimate tag preference, which we call tag pref. Let Iu to be the set of items that user u has rated, let ru,i to be the rating user u has given to item i, and let r ̄u be user u’s average rating across all items. User u’s tag preference for tag t is computed as follows:
+the movie. We chose to use preference correlation to repre- sent tag relevance, because it directly relates tag preference (the relationship between user and tag) with item preference (the relationship between user and item). To determine the preference correlation between item i and tag t, we compute the Pearson correlation between the sequence of ratings for i across all users and the sequence of inferred tag preference values for t across all users. Tag popularity is used implicitly as a filtering criteria; we assign a relevance of zero to tags that have not been applied at least once to a given item. We represent tag relevance on a continuous scale rather a binary one (relevant, not relevant), because this allows users to dis- cern the relative importance of one tag versus another when both tags are relevant to the item.
+We now formally define our measure of tag relevance, which we call tag rel. For a given tag t and item i, we define Uti to be the subset of users who have rated i and have a well-defined tag preference for t. (Users must have rated at least one item with tag t in order to have a well-defined tag preference for t.) We define X to be the set of ratings for item i across all users in Uti, adjusted by each user’s av- erage rating. That is, X = {ru,i − r ̄u : u ∈ Uti}. We subtract each user’s average rating to account for individ- ual differences in rating behavior. We define Y to be the set of inferred tag preference values8 toward tag t for all users in Uti, adjusted by each user’s average rating. That is, Y = {tag pref(u,t) − r ̄u : u ∈ Uti}. Tag rel is defined using Pearson correlation, as follows:
+ pearson(X, Y ), if t has been applied to i; tag rel(t, i) = 0, otherwise.
+Tag Filtering
+We filtered tags based on three criteria:
+• Tag quality. One study showed that only 21% of tags on MovieLens were of high enough quality to display to the community [10]. We filtered tags based on implicit and explicit measures of tag quality. First, we require that a tag has been applied by at least 5 different users and to at least 2 different items. Second, we require that the aver- age thumb rating of a tag across all items satisfy a min- imum threshold. As discussed earlier, MovieLens mem- bers use thumb ratings to give explicit feedback about tag quality. We used a smoothed average of thumb ratings as described in [10] and retained the top 30% of tags. How- ever, we chose not to filter tags representing movie gen- res or names of directors and actors. MovieLens mem- bers tended to rate these tags poorly, but we suspect this is due to the fact that genre, cast, and director are displayed next to each film, and tags containing the same informa- tion might appear redundant. For tagsplanations, we do not display this information and therefore such tags would not be redundant.
+• Tag redundancy. Different tags may have very simi- lar meanings [5]. These similarities arise when two tags are synonyms (film, movie), different forms of the same
+8When computing tag preference values for t, we excluded item i in order to avoid spurious correlations with ratings for i.
+        tag pref(u, t) =
+   r ·tagshare(t,i) +r ̄ ·k i∈Iu u,i u
+  i∈Iu tag share(t, i)  + k
+   tag pref(u, t) is undefined if user u has not rated any items with tag t. k is a smoothing constant that we assign a value of 0.057. The smoothing constant k accounts for users who have rated few items with a given tag. This smoothing serves to bring the computed tag preference closer to the user’s av- erage rating, because ratings of a small number of items may not properly reflect a user’s tag preference.
+Tag Relevance
+As discussed earlier, two possible measures of tag relevance are tag popularity and preference correlation. Tag popular- ity reflects the number of users who have applied the tag to the movie, while preference correlation is the correlation be- tween users’ preference for the tag and their preference for
+6 The term tagshare was first used by Tim Spalding from LibraryThing in a blog post on February 20, 2007: http://www.librarything.com/thingology/2007/02/when-tags- works-and-when-they-dont.php
+7We chose smoothing constants based on qualitative analysis over a series of test cases.
+
+ word (violence, violent), or at different levels of speci- ficity (comedy, dark comedy). Our process for filtering redundant tags consists of three steps: preprocessing, re- dundancy detection, and winner selection. In the prepro- cessing step, we stem9 the words in each tag and remove stopwords10. In the redundancy detection step, we use a simple heuristic: if two tags in the same explanation con- tain any of the same words or differ from one another by only 1 character, they are classified as redundant. The winning tag is the one with higher relevance to the given item.
+• Usefulness for explanation. We removed all tags with an undefined value for tag preference (which occurs when a user has not rated any items with that tag) or with a tag relevance score less than 0.05. We also limited the number of tags we show in each tagsplanation to 15, in order to conserve screen space and to avoid overloading users with too much information.
+Interface
+Figure 3 shows an example of the tagsplanation interface. Tag relevance is represented as a bar of varying length, while tag preference is depicted as a number of stars rounded to the nearest half. An arrow indicates sort order of the tags. We designed four variations of the interface, which differ in the data displayed (tag relevance, tag preference, or both) and the sorting order (tag relevance or tag preference):
+EXPERIMENT
+We conducted a within-subjects study of each of the four interfaces: RelSort, PrefSort, RelOnly, and PrefOnly. Sub- jects completed an online survey in which they evaluated each interfaces on how well it helped them (1) understand why an item was recommended (justification), (2) decide if they would like the recommended item (effectiveness), and (3) determine if the recommended item matched their mood (mood compatibility). Based on survey responses, we draw conclusions about the role of tag preference and tag rele- vance in promoting justification, effectiveness, and mood compatibility.
+• Interface 1: RelSort. Shows relevance and preference, sorts tags by relevance (Fig. 3)
+• Interface 2: PrefSort. Shows relevance and preference, sorts tags by preference (Fig. 4)
+• Interface 3: RelOnly. Shows relevance only, sorts tags by relevance (Fig. 5)
+• Interface 4: PrefOnly. Shows preference only, sorts tags by preference (Fig. 6)
+Figure 3: RelSort interface, for movie Rushmore. (The list of tags shown in each of these 4 figures is truncated).
+Figure 4: PrefSort interface, for movie Rear Window.
+Figure 5: RelOnly interface, for movie The Bourne Ultimatum.
+Figure 6: PrefOnly interface, for movie The Mummy Returns.
+Methodology
+We invited 2,392 users of MovieLens to participate in the study, which was launched on 08/19/2008. We only included
+    9 We used Porter’s stemming http://nltk.sourceforge.net
+10 We used a standard
+http://nltk.sourceforge.net plus one domain-specific stopword: “movie”
+algorithm as implemented at
+list of stopwords from
+
+ members who had logged in within the past 6 months and who had rated at least 50 movies. 556 users accepted the invitation. In the study, we included movies with at least 10 tags (after tag filtering) and between 1000 and 5000 movie ratings. 93 movies satisfied these conditions. We placed bounds on the number of ratings for each movie in order to find movies that were neither very popular nor obscure, be- cause we wished to provide a mix of movies that some sub- jects had seen and others had not seen. Clearly a live system would not use such filters. However, we found there was no statistically significant difference in survey responses for movies with a higher number of ratings (4000 to 5000 rat- ings) versus movies with a lower number of ratings (1000 to 2000). We leave it to future work to determine the min- imum amount of rating and tagging data needed to produce good-quality tagsplanations.
+Each participant took a personalized online survey, consist- ing of three parts:
+• Part 1: Evaluation of tagsplanations
+We showed each subject tagsplanations for 4 different movies, drawn randomly from the pool of movies that sat- isfied the filtering conditions described above. Further, we only showed users a tagsplanation if they had a well- defined tag preference for at least 7 of the tags (reduc- ing the number of eligible movies per user from 93 to 83, on average). Subjects only saw tagsplanations for movies they had not seen, and they verified whether or not they had seen each movie. Each of the 4 tagsplanations uti- lized a different interface (RelSort, PrefSort, RelOnly, or PrefOnly) so that each subject would see all 4 interfaces. To account for order effects, we presented the 4 interfaces in a random order.
+For each tagsplanation, participants responded to the fol- lowing statements using a 5-point Likert scale11:
+1. This explanation helps me understand my predicted rating. (Justification)
+2. This explanation helps me determine how well I will like this movie. (Effectiveness)
+3. This explanation helps me decide if this movie is right for my current mood. (Mood compatibility)
+• Part 2: Evaluation of particular tags
+We showed users three randomly chosen tags from the last tagsplanation they saw in Part 1 of the study. For each tag, they responded to the following statements using a 5-point Likert scale:
+1. This element helps me understand my predicted rat- ing.
+2. This element helps me determine how well I will like this movie.
+3. This element helps me decide if this movie is right for my current mood.
+11The possible responses were: 1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree.
+Figure 7: Percentage of responses that were agree or strongly agree, bro- ken down type of interface (RelSort, PrefSort, RelOnly, PrefOnly). Neutral responses were excluded from the calculations.
+Figure 8: Percentage of responses that were agree or strongly agree for each type of statement, broken down by tag type (factual, subjective). Neutral responses were excluded from the calculations.
+• Part 3: Verification of tagsplanation accuracy
+Subjects evaluated tagsplanations for two movies they had seen in the past, drawn from the same pool of movies de- scribed above. The purpose was to verify the accuracy of tagsplanations, since subjects had otherwise only eval- uated tagsplanations for movies they had not seen. For each tagsplanation, subjects responded to the following statement using a 5-point Likert scale:
+Overall this is a good explanation given my knowledge of the movie.
+Results
+In Part 1 of the study, users responded to a series of state- ments about 4 different tagsplanation interfaces. Figure 7 shows the percentage of responses that were either agree or strongly agree for each type of statement (justification, effectiveness, mood compatibility), broken down by inter- face (RelSort, PrefSort, RelOnly, and PrefOnly). Neutral responses, which accounted for less than 30% of total re- sponses in each category, were excluded from the calcula- tions.
+RelSort performed best in all three categories (justification, effectiveness, and mood-compatibility) by a statistically sig-
+
+  Top 10
+   score
+Bottom 10
+  score
+ afi 100 (laughs)
+   100.0%
+male nudity
+  0.0%
+ fantasy world
+   100.0%
+narrated
+  7.7%
+ world war ii
+   100.0%
+los angeles
+  12.5%
+ sci-fi
+   95.2%
+directorial debut
+  16.7%
+ action
+   94.4%
+childhood
+  17.6%
+ psychology
+   93.8%
+matt damon
+  20.0%
+ disney
+   91.7%
+movie business
+  25.0%
+ satirical
+   88.5%
+afi 100
+  25.5%
+ drama
+   87.5%
+new york city
+  26.7%
+ satire
+   86.4%
+amnesia
+  28.6%
+                       Table 1: 10 best and worst factual tags, based on percentage of responses that were agree or strongly agree. Includes tags with at least 10 responses.
+were excluded from this calculation. Broken down by inter- face, the percentage of agreement was 85.4% for RelSort, 80.3% for PrefSort, 75.7% for RelOnly, and 85.7% for Pre- fOnly.
+Discussion
+RQ-Justification: What is the role of tag preference and tag relevance in helping users understand their recom- mendation?
+The results in Figure 7 suggest that tag preference is more important than tag relevance for justifying recommendations. RelOnly, which only shows tag relevance, performed worst by a significant margin. PrefSort and PrefOnly received vir- tually the same score, even though PrefSort includes tag rel- evance and PrefOnly does not. Users may prefer seeing tag preference because they are skeptical that a recommender system can accurately infer their preferences. According to one user, “The weights (relevance) don’t do much good without the values (preferences) they’re applied to when it comes to understanding the predicted rating. This is be- cause what movielens thinks my preferences are might differ greatly from my actual preferences”.
+However, users preferred sorting by tag relevance. (RelSort significantly outperformed PrefSort.) Thus tag relevance ap- pears to serve best as an organizing principle for helping users understand recommendations. One subject commented: “sorting by relevance ... feels more useful in terms of seeing how it actually comes up with the final score.”
+RQ-Effectiveness: What is the role of tag preference and tag relevance in helping users determine if they will like the item?
+For effectiveness, tag preference and tag relevance appear to be of roughly equal importance, based on the fact that PrefOnly and RelOnly received similar scores. It is surpris- ing that tag preference would be as important as tag rele- vance, since users should know their own preferences. One possible reason is that showing tag preference promotes effi- ciency [16], since users can more quickly spot the tags they might like or dislike. Another possibility is that users did not understand that tag preference is user-specific rather than item-specific, and they might have incorrectly thought that tag preference revealed information about the movie. One user commented: “It is not clear if the preference ratings given are for the aspect in general, or for the value of the aspect exemplified by this movie.” Again, subjects preferred tag relevance as a sort order for effectiveness. One subject commented: “I like the relevance, it gives the breakdown of what elements the film has and you can gauge what you’ll be experiencing when you watch it.”
+RQ-Mood: What is the role of tag preference and tag rel- evance in helping users decide if an item fits their current mood?
+As Figure 7 shows, RelOnly performed significantly better
+  Top 10
+   score
+Bottom 10
+  score
+ great soundtrack
+   90.9%
+sexy
+  15.4%
+ fanciful
+   90.9%
+intimate
+  25.0%
+ funny
+   90.0%
+passionate
+  25.0%
+ poignant
+   88.9%
+lyrical
+  30.8%
+ witty
+   88.0%
+meditative
+  33.3%
+ dreamlike
+   87.5%
+brilliant
+  41.2%
+ whimsical
+   87.5%
+gritty
+  44.4%
+ dark
+   87.3%
+understated
+  45.5%
+ surreal
+   86.7%
+fun
+  50.0%
+ deadpan
+   84.2%
+reflective
+  50.0%
+                       Table 2: 10 best and worst subjective tags, based on percentage of users who agreed with statements about tag. Includes tags with at least 10 responses.
+nificant margin12 (p ≤ 0.005, p ≤ 0.02, and p ≤ 0.02 re- spectively). RelOnly scored lowest in justification by a sta- tistically significant margin (p ≤ 0.001). PrefSort scored higher than RelOnly in effectiveness by a statistically signif- icant margin (p ≤ 0.01). None of the other differences were statistically significant.
+In Part 2 of the study, users responded to a series of state- ments about individual tags. Figure 8 shows the percentage of responses that were agree or strongly agree for each type of statement (justification, effectiveness, and mood compat- ibility), summarized by type of tag (subjective or factual).13 In all three categories, subjective tags outperformed factual tags by a statistically significant margin (justification: p ≤ 0.02, effectiveness: p ≤ 0.001, mood compatibility: p ≤ 0.001). Tables 1 and 2 show the 10 best and worst perform- ing factual and subjective tags, based on the percentage of responses that were agree or strongly agree across all types of statements. Neutral responses were excluded from the calculations.
+Results from Part 3 of the study reveal that 81.7% of re- spondents agreed with the statement “Overall this is a good explanation given my knowledge of the movie”. Neutral re- sponses, which accounted for less than 20% of all responses,
+12To determine statistical significance we used the Z-test of two pro- portions.
+13In previous work [10], tags were manually coded as subjective or factual by two independent coders.
+
+for mood compatibility than it did for effectiveness or justifi- cation. This suggests that relevance plays its most important role in helping reveal mood compatibility. One user com- mented: “Exposing the supposedly relevant facets ... allows me to double check relevance against current interests and mood.” Based on the superior performance of RelSort over PrefSort, tag relevance is again the preferred sort order.
+RQ-Tag-Type: What types of tags are most useful in tags- planations?
+Figure 8 shows that subjective tags performed better than factual tags in all three categories. However, these results contradict prior work that showed users prefer factual tags over subjective tags [10]. One possible reason is that we filter out tags of low quality and low relevance, while the prior study did not. Subjective tags that survived the filtering step may compare more favorably to factual tags. Another possible reason for the discrepancy is context; subjects in our study evaluate tags in the context of specific tasks (un- derstanding the recommendation, deciding if they will like the item, assessing mood compatibility), while subjects in the earlier study rated tags based on whether they should be shown in a general setting. For these three tasks, in particular assessing mood compatibility, users may prefer subjective tags, while factual tags may be preferred in a more general setting.
+While subjective tags generally outperformed factual ones, anecdotal evidence suggests that users prefer a factual tag over a subjective tag if both capture the same idea. For example, users preferred the factual tag sexuality (64.9% agreement over all categories) to the subjective tag sexy (15.4% agreement), and users preferred the factual tag vio- lence (73.8% agreement) to the subjective tag violent (57.9% agreement).
+Based on the top-rated factual tags in Table 1, users pre- fer factual tags that describe genres (sci-fi, action, drama) or general themes (world war ii, psychology). Based on the lowest-rated tags, subjects disliked factual tags that were highly specific (los angeles, new york city, amnesia, movie business) or tags that describe meta-level information (direc- torial debut, narrated, afi 100)
+Based on the top-rated subjective tags in Table 2, subjects preferred subjective tags that are descriptive (surreal, dream- like, deadpan) or suggest mood (dark, whimsical, poignant). Based on the lowest rated tags, users dislike subjective tags with sexual themes (sexy, intimate, passionate) or tags that express opinion without providing a description (brilliant, fun).
+Beyond answering these specific research questions, the study also demonstrated the value of tagsplanations. Among sur- vey respondents who expressed an opinion, over 80% agreed that the RelSort interface achieved the goals of justification, effectiveness, and mood compatibility. Over 85% agreed that the RelSort interface provided a good explanation given their prior knowledge of a movie. One user commented:
+“This is as good a description of Waking Life as I could imagine being put together in a dozen words.”
+CONCLUSION
+Our study showed that tag relevance and tag preference both play a key role in tagsplanations. Tag relevance serves best in an organizing role, and both tag relevance and tag pref- erence help promote the goals of justification, effectiveness, and mood compatibility. The study also demonstrated the vi- ability of tagsplanations. Over 80% of respondents who ex- pressed an opinion agreed that the RelSort interface helped them (1) understand why an item was recommend, (2) de- cide if they would like the item, and (3) determine if an item fit their current mood.
+One limitation of this study is that all data is self-reported. Rather than asking subjects how well tagsplanations pro- mote effectiveness and mood compatibility, one could mea- sure these objectives empirically. Bilgic et al. developed a method for quantifying how well explanations help users make accurate decisions [1]. One could use this same ap- proach to test how well tagsplanations promote effective- ness.
+Future research might also address a broader set of goals, in- cluding scrutability, transparency, and trust [16]. Scrutabil- ity allows the user to tell the recommender system it is wrong. Tagsplanations could incorporate this principle by letting users override their inferred tag preferences. Greater transparency could be provided in tagsplanations by show- ing users the items they rated that affected their computed tag preference. Trust reflects the confidence that users place in the recommender system. Future studies could gather feedback on how well tagsplanations foster trust in the rec- ommender system.
+Additionally, future work could explore more sophisticated methods for estimating tag preference. With a dataset of ex- plicit tag ratings, one could use machine learning techniques to predict tag preference. SVD-based approaches, which have proven effective for predicting users’ ratings of items [9], might also might be utilized to estimate users’ prefer- ences for tags.
+ACKNOWLEDGMENTS
+The authors thank S. Andrew Sheppard, Rich Davies, and the rest of GroupLens for their feedback and assistance with this paper. We thank the members of MovieLens for their ratings, feedback and suggestions. This paper is funded in part by National Science Foundation grants IIS 03-24851 and IIS 05-34420.
+REFERENCES
+1. M. Bilgic and R. J. Mooney. Explaining recommendations: Satisfaction vs. promotion. In Proceedings of Beyond Personalization Workshop, IUI, 2005.
+2. D. Billsus and M. J. Pazzani. A personal news agent that talks, learns and explains. In AGENTS ’99:
+
+Proceedings of the third annual conference on Autonomous Agents, pages 268–275, New York, NY, USA, 1999. ACM.
+3. D. Cosley, S. K. Lam, I. Albert, J. Konstan, and
+J. Riedl. Is seeing believing? How recommender system interfaces affect users’ opinions. In CHI, 2003.
+4. J. Ellenberg. The psychologist might outsmart the math brains competing for the netflix prize. Wired Magazine, March 2008.
+5. S. Golder and B. A. Huberman. The structure of collaborative tagging systems. Journal of Information Science, 2006.
+6. J. Herlocker, J. Konstan, and J. Riedl. Explaining collaborative filtering recommendations. In Proceedings of the ACM Conference on Computer Supported Cooperative Work, 2000. CHI Letters 5(1).
+7. R. J. Mooney and L. Roy. Content-based book recommending using learning for text categorization. In DL ’00: Proceedings of the fifth ACM conference on Digital libraries, pages 195–204, New York, NY, USA, 2000. ACM.
+8. B. Sarwar, G. Karypis, J. Konstan, and J. Riedl. Item-based collaborative filtering recommendation algorithms. In WWW ’01: Proceedings of the 10th International Conference on World Wide Web, pages 285–295, Hong Kong, 2001. ACM Press.
+9. B. M. Sarwar, G. Karypis, J. Konstan, and J. Riedl. Application of dimensionality reduction in recommender systems - a case study. In ACM WebKDD 00 (Web-mining for ECommerce Workshop), New York, NY, USA, 2000. ACM.
+10. S. Sen, F. M. Harper, A. LaPitz, and J. Riedl. The quest for quality tags. In GROUP ’07: Proceedings of the 2007 international ACM conference on Supporting group work, pages 361–370, New York, NY, USA, 2007. ACM.
+11. S. Sen, S. K. Lam, A. M. Rashid, D. Cosley,
+D. Frankowski, J. Osterhouse, F. M. Harper, and
+J. Riedl. tagging, communities, vocabulary, evolution. In Proceedings of the ACM 2006 Conference on CSCW, Banff, Alberta, Canada, 2006.
+12. C. Shirky. Ontology is overrated. http://www.shirky.com/writings/ontology overrated.html, 2005. Retrieved on May 26, 2007.
+13. R. Sinha and K. Swearingen. The role of transparency in recommender systems. In CHI ’02: CHI ’02 extended abstracts on Human factors in computing systems, pages 830–831, New York, NY, USA, 2002. ACM.
+14. N. Tintarev. Explanations of recommendations. In
+RecSys ’07: Proceedings of the 2007 ACM conference on Recommender systems, pages 203–206, New York, NY, USA, 2007. ACM.
+15. N. Tintarev and J. Masthoff. Effective explanations of recommendations: user-centered design. In RecSys ’07: Proceedings of the 2007 ACM conference on Recommender systems, pages 153–156, New York, NY, USA, 2007. ACM.
+16. N. Tintarev and J. Masthoff. A survey of explanations in recommender systems. In IEEE 23rd International Conference on Data Engineering Workshop, pages 801–810, 2007.
